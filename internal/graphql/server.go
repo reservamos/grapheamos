@@ -7,10 +7,10 @@ import (
 	"os"
 
 	graphql "github.com/graph-gophers/graphql-go"
-	"github.com/reservamos/grapheamos/assets"
-	"github.com/reservamos/grapheamos/internal/graphql/handler"
-	"github.com/reservamos/grapheamos/internal/graphql/resolver"
-	"github.com/reservamos/grapheamos/internal/graphql/schema"
+	"github.com/reservamos/graphql-start/assets"
+	"github.com/reservamos/graphql-start/internal/graphql/handler"
+	"github.com/reservamos/graphql-start/internal/graphql/resolver"
+	"github.com/reservamos/graphql-start/internal/graphql/schema"
 )
 
 //Start starts the server which will be manage all clients requests

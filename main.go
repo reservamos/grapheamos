@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/reservamos/grapheamos/internal/graphql"
+	"github.com/reservamos/graphql-start/internal/graphql"
 )
 
 func main() {
