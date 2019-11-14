@@ -1,4 +1,4 @@
 package mutation
 
-// MutationResolver resolver for queries
-type MutationResolver struct{}
+// ResolveM resolver for mutations
+type ResolveM struct{}

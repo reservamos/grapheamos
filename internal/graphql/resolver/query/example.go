@@ -7,7 +7,7 @@ import (
 )
 
 // Me resolves sample query
-func (r *QueryResolver) Me(ctx context.Context) *UserResolver {
+func (r *ResolveQ) Me(ctx context.Context) *UserResolver {
 	return &UserResolver{}
 }
 

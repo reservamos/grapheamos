@@ -1,4 +1,4 @@
 package query
 
-// QueryResolver resolver for queries
-type QueryResolver struct{}
+// ResolveQ resolver for queries
+type ResolveQ struct{}

@@ -7,6 +7,6 @@ import (
 
 // Resolver main resolver struct
 type Resolver struct {
-	*query.QueryResolver
-	*mutation.MutationResolver
+	*query.ResolveQ
+	*mutation.ResolveM
 }
