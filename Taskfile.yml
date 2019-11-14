@@ -17,5 +17,6 @@ tasks:
     cmds:
       - task: compile_assets
       - PORT={{.PORT}} go run main.go
+    silent: true
 vars:
   PORT: "8080"
