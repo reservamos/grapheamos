@@ -1,0 +1,21 @@
+version: '2'
+
+tasks:
+  install:
+    desc: "Builds docker image and other dependencies (First thing you should do)"
+    cmds:
+      - go get -u github.com/go-bindata/go-bindata/...
+      - dep ensure
+  compile_assets:
+    desc: "Compiles assets into binaries to have a single executable file per program"
+    cmds:
+      - go-bindata -o internal/graphql/schema/bindata.go -ignore=\.go -pkg=schema ./internal/graphql/schema/...
+      - go-bindata -o assets/bindata.go -ignore=\.go -pkg=assets ./assets/...
+    silent: true
+  start:
+    desc: "Starts the server"
+    cmds:
+      - task: compile_assets
+      - PORT={{.PORT}} go run main.go
+vars:
+  PORT: "8080"
