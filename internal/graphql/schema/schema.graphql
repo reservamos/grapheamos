@@ -1,5 +1,26 @@
 type Query {
+  # Sample Query - Delete Me
   me: User 
+}
+
+type Mutation {
+  # Sample Mutation - Delete Me
+  createReview(
+    episode: Episode!,
+    review: ReviewInput!
+  ): Review!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+# Sample Types and Enum - Delete us :) 
+enum Episode {
+  NEWHOPE
+  EMPIRE
+  JEDI
 }
 
 type User {
@@ -7,6 +28,13 @@ type User {
   name: String!
 }
 
-schema {
-  query: Query
+type Review {
+  # episode: Episode!
+  stars: Int!
+  commentary: String!
+}
+
+input ReviewInput {
+  stars: Int!
+  commentary: String!
 }
