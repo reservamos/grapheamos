@@ -1,6 +1,6 @@
 # Graphql Go
 
-## Dependencies 
+## Dependencies 
 
 1. [Dep](https://golang.github.io/dep/)
 2. [Taskfile](https://taskfile.dev/)
